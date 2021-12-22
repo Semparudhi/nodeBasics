@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="container">
+      <div class="row">
+        <form class="col s12" action="/items" method="post">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">shopping_cart</i>
+              <input id="item-name" type="text" class="validate" name="name" />
+              <label for="item-name">Item Name</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">request_quote</i>
+              <input id="price" type="tel" class="validate" name="price" />
+              <label for="price">price</label>
+            </div>
+          </div>
+          <button class="btn">Add item</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
