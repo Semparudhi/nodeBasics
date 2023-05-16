@@ -5,8 +5,7 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 
-const mongodb =
-  'mongodb+srv://goku:goku123@nodedb1.yrq7v.mongodb.net/item-database?retryWrites=true&w=majority';
+const mongodb ='your db';
 mongoose
   .connect(mongodb)
   .then(() => {
